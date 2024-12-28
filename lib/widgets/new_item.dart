@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:shopping_list/data/categories.dart';
 import 'package:shopping_list/models/category.dart';
@@ -17,7 +16,7 @@ class _NewItemState extends State<NewItem> {
   final _formkey = GlobalKey<FormState>();
   var _enteredName = '';
   var _enteredQuantity = 1;
-  var _selectedCategory = categories[Categories.values]!;
+  var _selectedCategory = categories[Categories.vegetables]!;
 
   void _saveItem() {
     if (_formkey.currentState!.validate()) {
