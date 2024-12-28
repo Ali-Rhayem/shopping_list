@@ -33,7 +33,7 @@ class _NewItemState extends State<NewItem> {
                 },
               ),
               Row(
-                crossAxisAlignment :CrossAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Expanded(
                     child: TextFormField(
@@ -69,7 +69,23 @@ class _NewItemState extends State<NewItem> {
                     ),
                   ),
                 ],
-              )
+              ),
+              const SizedBox(
+                height: 12,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  TextButton(
+                    onPressed: () {},
+                    child: Text('Reset'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: Text('Add Item'),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
