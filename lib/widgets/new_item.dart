@@ -13,6 +13,7 @@ class NewItem extends StatefulWidget {
 
 class _NewItemState extends State<NewItem> {
   final _formkey = GlobalKey<FormState>();
+  var _enteredName = '';
 
   void _saveItem() {
     _formkey.currentState!.validate();
@@ -64,6 +65,9 @@ class _NewItemState extends State<NewItem> {
                           return 'Must be a valid positive number';
                         }
                         return null;
+                      },
+                      onSaved: (value) {
+                        _enteredName = value!;
                       },
                     ),
                   ),
