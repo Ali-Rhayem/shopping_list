@@ -55,10 +55,11 @@ class _NewItemState extends State<NewItem> {
 
       Navigator.of(context).pop(
         GroceryItem(
-            id: resData.body["name"],
-            name: _enteredName,
-            quantity: _enteredQuantity,
-            category: _selectedCategory),
+          id: resData["name"],
+          name: _enteredName,
+          quantity: _enteredQuantity,
+          category: _selectedCategory,
+        ),
       );
     }
   }
